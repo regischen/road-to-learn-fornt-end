@@ -1,0 +1,49 @@
+
+body{
+    font-size: 10px;
+    margin: 0;
+}
+
+.container{
+    width: auto;
+    height: auto;
+    margin: 0;
+    background-color: #dddddd;
+    display: grid;
+    
+    grid-template-columns: 1fr 4fr 1fr;
+
+    grid-template-areas: 
+        "lblank content rblank"
+        "lblank content rblank";
+}
+
+.mainbody{
+    margin: 20px;
+    padding: 10px 20%;
+    /* text-align: center; */
+    grid-area: content;
+    color: white;
+    background-color: #222222; 
+    /* line-height: 30px; */
+    border-radius: 2%;
+}
+
+.title{
+    font-size: 1.6rem;
+    text-align: center;
+} 
+
+li{
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.lblank{
+    grid-area: lblank;
+    /* background-color: black; */
+}
+
+input{
+    size: 60;
+}
